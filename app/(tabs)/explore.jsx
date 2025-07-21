@@ -97,6 +97,66 @@ export default function ExploreTab() {
           </TouchableOpacity>
         </View>
 
+        {/* Learning Examples */}
+        <View className="bg-white rounded-lg p-6 mb-6">
+          <Text className="text-xl font-semibold text-gray-800 mb-4">
+            Learning Examples
+          </Text>
+          <Text className="text-gray-600 mb-4">
+            Try these React Native component examples:
+          </Text>
+
+          <TouchableOpacity
+            onPress={() => navigateTo('/examples/lists/flatlist')}
+            className="bg-orange-600 py-3 px-4 rounded-lg mb-3"
+            activeOpacity={0.8}
+          >
+            <Text className="text-white font-medium">
+              📋 FlatList Example
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => navigateTo('/examples/lists/scrollview')}
+            className="bg-teal-600 py-3 px-4 rounded-lg mb-3"
+            activeOpacity={0.8}
+          >
+            <Text className="text-white font-medium">
+              📜 ScrollView Example
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => navigateTo('/examples/assets/image')}
+            className="bg-pink-600 py-3 px-4 rounded-lg mb-3"
+            activeOpacity={0.8}
+          >
+            <Text className="text-white font-medium">
+              🖼️ Image Example
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => navigateTo('/examples/assets/font')}
+            className="bg-indigo-600 py-3 px-4 rounded-lg mb-3"
+            activeOpacity={0.8}
+          >
+            <Text className="text-white font-medium">
+              📝 Font Example
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => navigateTo('/examples/components/demo')}
+            className="bg-yellow-600 py-3 px-4 rounded-lg"
+            activeOpacity={0.8}
+          >
+            <Text className="text-white font-medium">
+              🔘 Component Examples
+            </Text>
+          </TouchableOpacity>
+        </View>
+
         {/* App Features */}
         <View className="bg-blue-50 rounded-lg p-6">
           <Text className="text-xl font-semibold text-blue-800 mb-4">
